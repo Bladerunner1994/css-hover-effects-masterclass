@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Angled Thick Highlight
+   Category: 10. The Thick
+   Description: Parallelogram angled 15deg thick highlight block sliding through.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-thick-angled-highlight { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 4px 12px; z-index: 1; overflow: hidden; }
+.hover-thick-angled-highlight::before { content: ''; position: absolute; top: 0; left: -20%; width: 140%; height: 100%; background-color: var(--accent-color, #6366f1); transform: skewX(-20deg) scaleX(0); transform-origin: left; transition: transform 0.3s ease; z-index: -1; }
+.hover-thick-angled-highlight:hover::before { transform: skewX(-20deg) scaleX(1); }
+.hover-thick-angled-highlight:hover { color: #fff; }
