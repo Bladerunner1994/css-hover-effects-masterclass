@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Top-Bottom Meet at Left-Right
+   Category: 9. The All Sides
+   Description: Top and bottom lines meet at corners, then left and right lines complete box.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-topbottom-meet-lr { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-topbottom-meet-lr::before { content: ''; position: absolute; inset: 0; border-top: 2px solid var(--accent-color, #6366f1); border-bottom: 2px solid var(--accent-color, #6366f1); transform: scaleX(0); transition: transform 0.25s ease; }
+.hover-allsides-topbottom-meet-lr::after { content: ''; position: absolute; inset: 0; border-left: 2px solid var(--accent-color, #6366f1); border-right: 2px solid var(--accent-color, #6366f1); transform: scaleY(0); transform-origin: center; transition: transform 0.25s ease 0.2s; }
+.hover-allsides-topbottom-meet-lr:hover::before { transform: scaleX(1); }
+.hover-allsides-topbottom-meet-lr:hover::after { transform: scaleY(1); }
