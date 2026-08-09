@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Floating Top-Dots
+   Category: 6. The Rounded
+   Description: Small glowing rounded circles hover above top border.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-rounded-floating-top-dots { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-top: 8px; }
+.hover-rounded-floating-top-dots::before { content: ''; position: absolute; width: 6px; height: 6px; top: 0; left: 50%; background-color: var(--accent-color, #6366f1); border-radius: 50%; transform: translateX(-50%) translateY(6px); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-rounded-floating-top-dots:hover::before { opacity: 1; transform: translateX(-50%) translateY(-2px); }
