@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Full Box Instant Draw
+   Category: 9. The All Sides
+   Description: Full box outline draws around element in one sleek instant motion.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-full-box-draw { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-full-box-draw::after { content: ''; position: absolute; inset: 0; border: 2px solid var(--accent-color, #6366f1); clip-path: inset(0 100% 0 0); transition: clip-path 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+.hover-allsides-full-box-draw:hover::after { clip-path: inset(0 0 0 0); }
