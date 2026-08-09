@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Full Width Drop to Tiny Dot
+   Category: 5. The Unexpected
+   Description: Full width line drops down and collapses into a tiny center glowing dot.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-unexpected-full-drop-to-dot { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 6px; }
+.hover-unexpected-full-drop-to-dot::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transition: transform 0.3s ease, width 0.3s ease 0.1s, left 0.3s ease 0.1s, border-radius 0.3s ease; }
+.hover-unexpected-full-drop-to-dot:hover::after { width: 6px; height: 6px; left: calc(50% - 3px); border-radius: 50%; transform: translateY(2px); box-shadow: 0 0 8px var(--accent-color, #6366f1); }
