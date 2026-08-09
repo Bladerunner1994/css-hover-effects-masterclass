@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Edges-In Background Fill
+   Category: 11. The Sliding
+   Description: Background closing in 100% from outside edges inward.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-sliding-edges-in-fill { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; overflow: hidden; }
+.hover-sliding-edges-in-fill::before { content: ''; position: absolute; inset: 0; background-color: var(--accent-color, #6366f1); clip-path: inset(50% 50% 50% 50%); transition: clip-path 0.35s ease; z-index: -1; }
+.hover-sliding-edges-in-fill:hover::before { clip-path: inset(0 0 0 0); }
+.hover-sliding-edges-in-fill:hover { color: #ffffff; }
