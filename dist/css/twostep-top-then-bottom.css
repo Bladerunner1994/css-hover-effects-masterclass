@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Top Line Then Bottom Line
+   Category: 4. The Two Steps
+   Description: Top overline expands first, followed by bottom underline with a distinct delay.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-twostep-top-then-bottom { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 0; }
+.hover-twostep-top-then-bottom::before, .hover-twostep-top-then-bottom::after { content: ''; position: absolute; width: 100%; height: 2px; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: left; }
+.hover-twostep-top-then-bottom::before { top: 0; transition: transform 0.25s ease; }
+.hover-twostep-top-then-bottom::after { bottom: 0; transition: transform 0.25s ease 0.15s; }
+.hover-twostep-top-then-bottom:hover::before, .hover-twostep-top-then-bottom:hover::after { transform: scaleX(1); }
