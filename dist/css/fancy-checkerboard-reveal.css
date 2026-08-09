@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Checkerboard Reveal
+   Category: 12. The Fancy
+   Description: Masked checkerboard grid pattern fading in behind element.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fancy-checkerboard-reveal { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; }
+.hover-fancy-checkerboard-reveal::before { content: ''; position: absolute; inset: 0; background-image: conic-gradient(rgba(99, 102, 241, 0.3) 90deg, transparent 90deg 180deg, rgba(99, 102, 241, 0.3) 180deg 270deg, transparent 270deg); background-size: 16px 16px; opacity: 0; transition: opacity 0.3s ease; z-index: -1; border-radius: 4px; }
+.hover-fancy-checkerboard-reveal:hover::before { opacity: 1; }
