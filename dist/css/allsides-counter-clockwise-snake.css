@@ -1,0 +1,13 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Counter-Clockwise Snake
+   Category: 9. The All Sides
+   Description: Line traveling counter-clockwise around all 4 borders.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-counter-clockwise-snake { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-counter-clockwise-snake::before, .hover-allsides-counter-clockwise-snake::after { content: ''; position: absolute; width: 0; height: 0; border: 2px solid transparent; }
+.hover-allsides-counter-clockwise-snake::before { top: 0; right: 0; transition: width 0.15s ease, height 0.15s ease 0.15s; }
+.hover-allsides-counter-clockwise-snake::after { bottom: 0; left: 0; transition: width 0.15s ease 0.3s, height 0.15s ease 0.45s; }
+.hover-allsides-counter-clockwise-snake:hover::before { width: 100%; height: 100%; border-top-color: var(--accent-color, #6366f1); border-left-color: var(--accent-color, #6366f1); }
+.hover-allsides-counter-clockwise-snake:hover::after { width: 100%; height: 100%; border-bottom-color: var(--accent-color, #6366f1); border-right-color: var(--accent-color, #6366f1); }
