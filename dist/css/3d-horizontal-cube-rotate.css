@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Horizontal Cube Rotate
+   Category: 14. The 3D
+   Description: 3D cube rotation revealing bottom face on hover.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-3d-horizontal-cube-rotate { display: inline-block; perspective: 800px; }
+.hover-3d-horizontal-cube-rotate-inner { display: inline-block; padding: 8px 16px; background-color: var(--accent-color, #6366f1); color: #ffffff; border-radius: 6px; transition: transform 0.4s ease; transform-style: preserve-3d; }
+.hover-3d-horizontal-cube-rotate:hover .hover-3d-horizontal-cube-rotate-inner { transform: rotateX(90deg) translateY(-10px); }
