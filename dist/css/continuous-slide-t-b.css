@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Slide In Top, Slide Out Bottom
+   Category: 2. The Continuous
+   Description: Vertical line slides in from top, and exits to bottom on hover leave.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-continuous-slide-t-b { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-left: 8px; overflow: hidden; }
+.hover-continuous-slide-t-b::before { content: ''; position: absolute; width: 2px; height: 100%; top: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleY(0); transform-origin: bottom left; transition: transform 0.3s ease; }
+.hover-continuous-slide-t-b:hover::before { transform: scaleY(1); transform-origin: top left; }
