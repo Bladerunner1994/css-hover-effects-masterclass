@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>104 CSS Hover Effects Masterclass & Interactive Showcase</title>
+  <meta name="description" content="A curated collection of 104 modern, high-performance CSS hover effects across 14 categories. Copy CSS snippets or download standalone .css files.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CSS Hover Effects Masterclass</h1>
+      <p>A curated collection of 104 interactive CSS hover animations across 14 categories. Hover to preview live, copy code in 1-click, or download standalone CSS files.</p>
+      
+      <div class="header-actions">
+        <button id="download-all-btn" class="btn-primary">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Download All 104 (.ZIP)
+        </button>
+      </div>
+    </header>
+
+    <!-- Controls Bar -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input type="text" id="search-input" placeholder="Search hover effects by name, category, or description (e.g. Underline, 3D, Snake, Glow)...">
+      </div>
+      <div class="categories-tabs" id="categories-tabs">
+        <!-- Dynamic Category Tabs injected by JS -->
+      </div>
+    </div>
+
+    <!-- Effects Grid -->
+    <main id="effects-grid" class="effects-grid">
+      <!-- Dynamic Effect Cards injected by JS -->
+    </main>
+  </div>
+
+  <!-- Code Modal -->
+  <div id="code-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">CSS Code Preview</h3>
+        <button id="close-modal" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre class="code-block"><code id="modal-code"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-copy-btn" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+          Copy CSS Code
+        </button>
+        <button id="modal-download-btn" class="btn-primary" style="background: #334155; padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+          Download .CSS File
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="effects_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
