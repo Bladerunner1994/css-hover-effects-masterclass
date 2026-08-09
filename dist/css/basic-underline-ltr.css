@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Left-to-Right Underline
+   Category: 1. The Basic
+   Description: Classic bottom underline sliding smoothly from left to right.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-basic-underline-ltr { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-basic-underline-ltr::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: bottom left; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.hover-basic-underline-ltr:hover::after { transform: scaleX(1); }
