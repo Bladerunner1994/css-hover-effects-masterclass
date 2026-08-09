@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Forward Hinge Flip
+   Category: 14. The 3D
+   Description: 3D perspective flip forward around X axis.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-3d-forward-hinge-flip { display: inline-block; perspective: 600px; }
+.hover-3d-forward-hinge-flip-inner { display: inline-block; padding: 8px 16px; background-color: var(--accent-color, #6366f1); color: #ffffff; border-radius: 6px; transform-origin: bottom; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.hover-3d-forward-hinge-flip:hover .hover-3d-forward-hinge-flip-inner { transform: rotateX(30deg); }
