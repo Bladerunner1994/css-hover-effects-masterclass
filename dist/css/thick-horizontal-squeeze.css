@@ -1,0 +1,13 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Horizontal Block Squeeze
+   Category: 10. The Thick
+   Description: Thick left & right blocks squeezing inward horizontally.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-thick-horizontal-squeeze { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 12px; z-index: 1; }
+.hover-thick-horizontal-squeeze::before, .hover-thick-horizontal-squeeze::after { content: ''; position: absolute; width: 50%; height: 100%; top: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: -1; opacity: 0.85; }
+.hover-thick-horizontal-squeeze::before { left: 0; transform-origin: left; }
+.hover-thick-horizontal-squeeze::after { right: 0; transform-origin: right; }
+.hover-thick-horizontal-squeeze:hover::before, .hover-thick-horizontal-squeeze:hover::after { transform: scaleX(1); }
+.hover-thick-horizontal-squeeze:hover { color: #fff; }
