@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Left Slide to Center Snap
+   Category: 5. The Unexpected
+   Description: Line slides in fast from left and snaps elastically into center position.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-unexpected-left-slide-snap { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-unexpected-left-slide-snap::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: translateX(-100%); opacity: 0; transition: transform 0.35s cubic-bezier(0.68, -0.6, 0.32, 1.6), opacity 0.2s ease; }
+.hover-unexpected-left-slide-snap:hover::after { transform: translateX(0); opacity: 1; }
