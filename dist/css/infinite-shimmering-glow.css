@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Shimmering Glow Effect
+   Category: 8. The Infinite
+   Description: Shimmer light beam sweeping endlessly across background.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-infinite-shimmering-glow { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 6px; overflow: hidden; background-color: rgba(99, 102, 241, 0.1); }
+.hover-infinite-shimmering-glow::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent); transform: skewX(-20deg); }
+.hover-infinite-shimmering-glow:hover::after { animation: shimmerSweep 1.5s infinite; }
+@keyframes shimmerSweep { 100% { left: 150%; } }
