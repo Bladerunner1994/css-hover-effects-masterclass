@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Expanding Double Center
+   Category: 3. The Double
+   Description: Top and bottom double lines expanding outward from center.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-double-expanding-center { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 0; }
+.hover-double-expanding-center::before, .hover-double-expanding-center::after { content: ''; position: absolute; width: 100%; height: 2px; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: center; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.hover-double-expanding-center::before { top: 0; }
+.hover-double-expanding-center::after { bottom: 0; }
+.hover-double-expanding-center:hover::before, .hover-double-expanding-center:hover::after { transform: scaleX(1); }
