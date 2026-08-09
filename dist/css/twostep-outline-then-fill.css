@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Outline Box Then Fill Center
+   Category: 4. The Two Steps
+   Description: Border outline appears around element first, followed by translucent fill.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-twostep-outline-then-fill { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 14px; border: 1px solid transparent; transition: border-color 0.2s ease, background-color 0.25s ease 0.15s; }
+.hover-twostep-outline-then-fill:hover { border-color: var(--accent-color, #6366f1); background-color: rgba(99, 102, 241, 0.15); }
