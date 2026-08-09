@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Slow Slide to Quick Snap
+   Category: 5. The Unexpected
+   Description: Line slides slowly to 80% then suddenly snaps to 100% at ultra high speed.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-unexpected-slow-slide-quick-snap { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-unexpected-slow-slide-quick-snap::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: left; transition: transform 0.5s cubic-bezier(0.9, 0, 0.1, 1); }
+.hover-unexpected-slow-slide-quick-snap:hover::after { transform: scaleX(1); }
