@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Physical Key Press Down
+   Category: 14. The 3D
+   Description: Skeuomorphic keyboard key press down with shadow drop.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-3d-physical-key-press { display: inline-block; padding: 10px 20px; background-color: #6366f1; color: #ffffff; border-radius: 8px; box-shadow: 0 6px 0 #4338ca, 0 10px 15px rgba(0,0,0,0.3); transition: transform 0.1s ease, box-shadow 0.1s ease; cursor: pointer; }
+.hover-3d-physical-key-press:hover { transform: translateY(4px); box-shadow: 0 2px 0 #4338ca, 0 4px 8px rgba(0,0,0,0.2); }
