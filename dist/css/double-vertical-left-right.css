@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Vertical Left and Right Lines
+   Category: 3. The Double
+   Description: Left and right vertical side borders extending downward on hover.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-double-vertical-left-right { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 4px 12px; }
+.hover-double-vertical-left-right::before, .hover-double-vertical-left-right::after { content: ''; position: absolute; width: 2px; height: 100%; top: 0; background-color: var(--accent-color, #6366f1); transform: scaleY(0); transition: transform 0.3s ease; }
+.hover-double-vertical-left-right::before { left: 0; transform-origin: top; }
+.hover-double-vertical-left-right::after { right: 0; transform-origin: bottom; }
+.hover-double-vertical-left-right:hover::before, .hover-double-vertical-left-right:hover::after { transform: scaleY(1); }
