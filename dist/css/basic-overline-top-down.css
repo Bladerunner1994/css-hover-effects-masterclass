@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Top-Down Drop Line
+   Category: 1. The Basic
+   Description: Overline line dropping down onto top edge.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-basic-overline-top-down { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-top: 4px; }
+.hover-basic-overline-top-down::before { content: ''; position: absolute; width: 100%; height: 2px; top: 0; left: 0; opacity: 0; background-color: var(--accent-color, #6366f1); transform: translateY(-8px); transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-basic-overline-top-down:hover::before { opacity: 1; transform: translateY(0); }
