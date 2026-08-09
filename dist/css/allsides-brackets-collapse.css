@@ -1,0 +1,13 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Corner Brackets Collapse
+   Category: 9. The All Sides
+   Description: Corner brackets collapse inward tightly around text.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-brackets-collapse { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-brackets-collapse::before, .hover-allsides-brackets-collapse::after { content: ''; position: absolute; width: 100%; height: 100%; border: 2px solid var(--accent-color, #6366f1); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-allsides-brackets-collapse::before { top: -6px; left: -6px; border-right: 0; border-bottom: 0; }
+.hover-allsides-brackets-collapse::after { bottom: -6px; right: -6px; border-left: 0; border-top: 0; }
+.hover-allsides-brackets-collapse:hover::before { transform: translate(6px, 6px); opacity: 1; }
+.hover-allsides-brackets-collapse:hover::after { transform: translate(-6px, -6px); opacity: 1; }
