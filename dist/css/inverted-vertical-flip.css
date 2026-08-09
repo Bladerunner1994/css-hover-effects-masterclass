@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Vertical Negative-Space Color Flip
+   Category: 13. The Inverted
+   Description: Color and text invert vertically from top to bottom.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-inverted-vertical-flip { position: relative; text-decoration: none; color: #6366f1; display: inline-block; padding: 8px 16px; border: 2px solid #6366f1; border-radius: 4px; z-index: 1; overflow: hidden; transition: color 0.3s ease; }
+.hover-inverted-vertical-flip::before { content: ''; position: absolute; inset: 0; background-color: #6366f1; transform: scaleY(0); transform-origin: top; transition: transform 0.3s ease; z-index: -1; }
+.hover-inverted-vertical-flip:hover::before { transform: scaleY(1); }
+.hover-inverted-vertical-flip:hover { color: #ffffff; }
