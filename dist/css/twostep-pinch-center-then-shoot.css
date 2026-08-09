@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Pinch Center Then Shoot Edges
+   Category: 4. The Two Steps
+   Description: Pinches line to center point first, then shoots outward to both edges.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-twostep-pinch-center-then-shoot { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-twostep-pinch-center-then-shoot::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: center; transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.hover-twostep-pinch-center-then-shoot:hover::after { transform: scaleX(1); }
