@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Center-Out Background Fill
+   Category: 11. The Sliding
+   Description: Circle background expanding 100% from center out.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-sliding-center-out-fill { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; overflow: hidden; }
+.hover-sliding-center-out-fill::before { content: ''; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background-color: var(--accent-color, #6366f1); border-radius: 50%; transform: translate(-50%, -50%) scale(0); transition: transform 0.4s ease; z-index: -1; }
+.hover-sliding-center-out-fill:hover::before { transform: translate(-50%, -50%) scale(2.5); }
+.hover-sliding-center-out-fill:hover { color: #ffffff; }
