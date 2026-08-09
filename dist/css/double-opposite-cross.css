@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Opposite-Side Cross
+   Category: 3. The Double
+   Description: Top line slides left-to-right, bottom line slides right-to-left.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-double-opposite-cross { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 0; }
+.hover-double-opposite-cross::before { content: ''; position: absolute; width: 100%; height: 2px; top: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+.hover-double-opposite-cross::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; right: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: right; transition: transform 0.3s ease; }
+.hover-double-opposite-cross:hover::before, .hover-double-opposite-cross:hover::after { transform: scaleX(1); }
