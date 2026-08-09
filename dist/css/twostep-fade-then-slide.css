@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Fade In Then Slide Right
+   Category: 4. The Two Steps
+   Description: Underline fades in at half width, then slides to fill full width.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-twostep-fade-then-slide { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-twostep-fade-then-slide::after { content: ''; position: absolute; width: 50%; height: 2px; bottom: 0; left: 0; opacity: 0; background-color: var(--accent-color, #6366f1); transition: opacity 0.15s ease, width 0.25s ease 0.15s; }
+.hover-twostep-fade-then-slide:hover::after { opacity: 1; width: 100%; }
