@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Center-Out All Sides
+   Category: 9. The All Sides
+   Description: All 4 borders expanding simultaneously from middle of each edge.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-center-out { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border: 2px solid transparent; transition: border-color 0.3s ease; }
+.hover-allsides-center-out::before { content: ''; position: absolute; inset: 0; border: 2px solid var(--accent-color, #6366f1); transform: scale(0.5); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-allsides-center-out:hover::before { transform: scale(1); opacity: 1; }
