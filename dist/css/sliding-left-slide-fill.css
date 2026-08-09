@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Left Slide Fill
+   Category: 11. The Sliding
+   Description: Solid color background sliding in 100% from left.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-sliding-left-slide-fill { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; overflow: hidden; }
+.hover-sliding-left-slide-fill::before { content: ''; position: absolute; inset: 0; background-color: var(--accent-color, #6366f1); transform: translateX(-100%); transition: transform 0.3s ease; z-index: -1; }
+.hover-sliding-left-slide-fill:hover::before { transform: translateX(0); }
+.hover-sliding-left-slide-fill:hover { color: #ffffff; }
