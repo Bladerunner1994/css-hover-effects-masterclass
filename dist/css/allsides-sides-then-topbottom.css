@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Sides First, Then Top/Bottom
+   Category: 9. The All Sides
+   Description: Left & right borders grow first, followed by top & bottom.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-sides-then-topbottom { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-sides-then-topbottom::before { content: ''; position: absolute; inset: 0; border-left: 2px solid var(--accent-color, #6366f1); border-right: 2px solid var(--accent-color, #6366f1); transform: scaleY(0); transition: transform 0.2s ease; }
+.hover-allsides-sides-then-topbottom::after { content: ''; position: absolute; inset: 0; border-top: 2px solid var(--accent-color, #6366f1); border-bottom: 2px solid var(--accent-color, #6366f1); transform: scaleX(0); transition: transform 0.2s ease 0.18s; }
+.hover-allsides-sides-then-topbottom:hover::before { transform: scaleY(1); }
+.hover-allsides-sides-then-topbottom:hover::after { transform: scaleX(1); }
