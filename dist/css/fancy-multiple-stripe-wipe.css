@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Multiple Stripe Wipe
+   Category: 12. The Fancy
+   Description: Multi-color stripes wiping across background.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fancy-multiple-stripe-wipe { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; overflow: hidden; z-index: 1; }
+.hover-fancy-multiple-stripe-wipe::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #6366f1 33%, #a855f7 33%, #a855f7 66%, #ec4899 66%); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; z-index: -1; }
+.hover-fancy-multiple-stripe-wipe:hover::before { transform: scaleX(1); }
+.hover-fancy-multiple-stripe-wipe:hover { color: #fff; }
