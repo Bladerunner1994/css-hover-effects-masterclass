@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Thick and Thin Bottom Lines
+   Category: 3. The Double
+   Description: Dual bottom line with a thick primary bar and thin delayed secondary bar.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-double-thick-thin-bottom { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 8px; }
+.hover-double-thick-thin-bottom::before { content: ''; position: absolute; width: 100%; height: 3px; bottom: 4px; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+.hover-double-thick-thin-bottom::after { content: ''; position: absolute; width: 100%; height: 1px; bottom: 0; left: 0; background-color: var(--accent-color-light, #818cf8); transform: scaleX(0); transform-origin: right; transition: transform 0.3s ease 0.08s; }
+.hover-double-thick-thin-bottom:hover::before, .hover-double-thick-thin-bottom:hover::after { transform: scaleX(1); }
