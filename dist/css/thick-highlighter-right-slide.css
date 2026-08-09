@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Highlighter-Style Right Slide
+   Category: 10. The Thick
+   Description: Thick highlighter block sliding in from right.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-thick-highlighter-right-slide { position: relative; text-decoration: none; color: inherit; display: inline-block; z-index: 1; }
+.hover-thick-highlighter-right-slide::before { content: ''; position: absolute; width: 100%; height: 60%; bottom: 0; left: 0; background-color: rgba(99, 102, 241, 0.35); transform: scaleX(0); transform-origin: right; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: -1; }
+.hover-thick-highlighter-right-slide:hover::before { transform: scaleX(1); }
