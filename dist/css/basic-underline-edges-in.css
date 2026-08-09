@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Edges-Collapsing Inward
+   Category: 1. The Basic
+   Description: Underline starts from outer edges and collapses inward to center.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-basic-underline-edges-in { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-basic-underline-edges-in::before, .hover-basic-underline-edges-in::after { content: ''; position: absolute; width: 50%; height: 2px; bottom: 0; background-color: var(--accent-color, #6366f1); transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-basic-underline-edges-in::before { left: 0; transform: translateX(-100%); opacity: 0; }
+.hover-basic-underline-edges-in::after { right: 0; transform: translateX(100%); opacity: 0; }
+.hover-basic-underline-edges-in:hover::before, .hover-basic-underline-edges-in:hover::after { transform: translateX(0); opacity: 1; }
