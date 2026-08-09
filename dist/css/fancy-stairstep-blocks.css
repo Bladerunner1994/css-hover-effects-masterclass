@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Staggered Stair-Step Blocks
+   Category: 12. The Fancy
+   Description: Stair-step pixelated block building up across bottom.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fancy-stairstep-blocks { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 6px; }
+.hover-fancy-stairstep-blocks::after { content: ''; position: absolute; width: 100%; height: 4px; bottom: 0; left: 0; background: linear-gradient(90deg, #6366f1 25%, transparent 25%, transparent 50%, #6366f1 50%, #6366f1 75%, transparent 75%); background-size: 16px 4px; opacity: 0; transition: opacity 0.3s ease; }
+.hover-fancy-stairstep-blocks:hover::after { opacity: 1; }
