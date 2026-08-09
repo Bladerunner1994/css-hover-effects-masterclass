@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Slide In Left, Slide Out Right
+   Category: 2. The Continuous
+   Description: Line slides in from left on hover, and exits to right when mouse leaves.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-continuous-slide-l-r { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; overflow: hidden; }
+.hover-continuous-slide-l-r::after { content: ''; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: bottom right; transition: transform 0.3s ease; }
+.hover-continuous-slide-l-r:hover::after { transform: scaleX(1); transform-origin: bottom left; }
