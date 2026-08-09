@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Rotating Gradient Border
+   Category: 8. The Infinite
+   Description: Conic gradient border rotating 360 degrees endlessly on hover.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-infinite-rotating-gradient-border { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 8px; z-index: 1; overflow: hidden; }
+.hover-infinite-rotating-gradient-border::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: conic-gradient(from 0deg, #6366f1, #a855f7, #ec4899, #6366f1); opacity: 0; transition: opacity 0.3s ease; z-index: -2; }
+.hover-infinite-rotating-gradient-border::after { content: ''; position: absolute; inset: 2px; background: #0f172a; border-radius: 6px; z-index: -1; }
+.hover-infinite-rotating-gradient-border:hover::before { opacity: 1; animation: rotateGradient 2s linear infinite; }
+@keyframes rotateGradient { to { transform: rotate(360deg); } }
