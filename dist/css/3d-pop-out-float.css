@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Pop-Out Float Off Page
+   Category: 14. The 3D
+   Description: Card or button pops out with 3D elevation shadow and scale.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-3d-pop-out-float { display: inline-block; padding: 10px 20px; background-color: #1e293b; border: 1px solid rgba(255,255,255,0.1); color: #ffffff; border-radius: 8px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease; }
+.hover-3d-pop-out-float:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 15px 30px rgba(99, 102, 241, 0.3); }
