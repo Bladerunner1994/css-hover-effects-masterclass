@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Blurry Reveal
+   Category: 7. The Fading
+   Description: Backdrop filter resolves from blurry 10px to sharp glass on hover.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fading-blurry-reveal { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 8px; filter: blur(4px); opacity: 0.7; transition: filter 0.3s ease, opacity 0.3s ease; }
+.hover-fading-blurry-reveal:hover { filter: blur(0px); opacity: 1; }
