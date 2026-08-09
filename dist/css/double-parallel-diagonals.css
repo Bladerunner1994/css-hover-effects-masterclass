@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Parallel Diagonal Lines
+   Category: 3. The Double
+   Description: Two angled parallel lines sweeping across element on hover.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-double-parallel-diagonals { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 12px; overflow: hidden; }
+.hover-double-parallel-diagonals::before, .hover-double-parallel-diagonals::after { content: ''; position: absolute; top: -50%; width: 4px; height: 200%; background-color: var(--accent-color, #6366f1); transform: rotate(25deg) translateX(-100px); transition: transform 0.4s ease; }
+.hover-double-parallel-diagonals::before { left: -10px; }
+.hover-double-parallel-diagonals::after { left: 4px; opacity: 0.5; transition-delay: 0.06s; }
+.hover-double-parallel-diagonals:hover::before, .hover-double-parallel-diagonals:hover::after { transform: rotate(25deg) translateX(300px); }
