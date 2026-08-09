@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Dynamic Color Block
+   Category: 10. The Thick
+   Description: Thick block changing color dynamically as it fills text.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-thick-dynamic-color-block { position: relative; text-decoration: none; color: inherit; display: inline-block; z-index: 1; padding: 4px 8px; }
+.hover-thick-dynamic-color-block::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; z-index: -1; border-radius: 4px; }
+.hover-thick-dynamic-color-block:hover::before { transform: scaleX(1); }
+.hover-thick-dynamic-color-block:hover { color: #ffffff; }
