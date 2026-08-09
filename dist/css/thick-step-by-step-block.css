@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Step-by-Step Block Build
+   Category: 10. The Thick
+   Description: 3 staggered vertical steps building up a thick highlight block.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-thick-step-by-step-block { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 4px 10px; z-index: 1; }
+.hover-thick-step-by-step-block::before { content: ''; position: absolute; inset: 0; background-color: var(--accent-color, #6366f1); clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); transition: clip-path 0.4s steps(4); z-index: -1; border-radius: 4px; }
+.hover-thick-step-by-step-block:hover::before { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+.hover-thick-step-by-step-block:hover { color: #fff; }
