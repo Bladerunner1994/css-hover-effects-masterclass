@@ -1,0 +1,12 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Left-Right Meet at Top-Bottom
+   Category: 9. The All Sides
+   Description: Left and right lines grow to corners, then top and bottom lines slide in to meet.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-leftright-meet-tb { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-leftright-meet-tb::before { content: ''; position: absolute; inset: 0; border-left: 2px solid var(--accent-color, #6366f1); border-right: 2px solid var(--accent-color, #6366f1); transform: scaleY(0); transition: transform 0.25s ease; }
+.hover-allsides-leftright-meet-tb::after { content: ''; position: absolute; inset: 0; border-top: 2px solid var(--accent-color, #6366f1); border-bottom: 2px solid var(--accent-color, #6366f1); transform: scaleX(0); transform-origin: center; transition: transform 0.25s ease 0.2s; }
+.hover-allsides-leftright-meet-tb:hover::before { transform: scaleY(1); }
+.hover-allsides-leftright-meet-tb:hover::after { transform: scaleX(1); }
