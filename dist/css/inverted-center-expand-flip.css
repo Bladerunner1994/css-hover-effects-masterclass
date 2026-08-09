@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Center-Expand Negative-Space Color Flip
+   Category: 13. The Inverted
+   Description: Color and text invert expanding in a circle from center.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-inverted-center-expand-flip { position: relative; text-decoration: none; color: #6366f1; display: inline-block; padding: 8px 16px; border: 2px solid #6366f1; border-radius: 4px; z-index: 1; overflow: hidden; transition: color 0.4s ease; }
+.hover-inverted-center-expand-flip::before { content: ''; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background-color: #6366f1; border-radius: 50%; transform: translate(-50%, -50%) scale(0); transition: transform 0.4s ease; z-index: -1; }
+.hover-inverted-center-expand-flip:hover::before { transform: translate(-50%, -50%) scale(2.5); }
+.hover-inverted-center-expand-flip:hover { color: #ffffff; }
