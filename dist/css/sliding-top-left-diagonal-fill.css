@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Top-Left Diagonal Fill
+   Category: 11. The Sliding
+   Description: Diagonal background sweep from top-left corner.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-sliding-top-left-diagonal-fill { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; overflow: hidden; }
+.hover-sliding-top-left-diagonal-fill::before { content: ''; position: absolute; inset: 0; background-color: var(--accent-color, #6366f1); transform: translate(-100%, -100%); transition: transform 0.35s ease; z-index: -1; }
+.hover-sliding-top-left-diagonal-fill:hover::before { transform: translate(0, 0); }
+.hover-sliding-top-left-diagonal-fill:hover { color: #ffffff; }
