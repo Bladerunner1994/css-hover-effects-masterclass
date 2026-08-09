@@ -1,0 +1,13 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Double Cross to Single Merge
+   Category: 5. The Unexpected
+   Description: Two lines cross from opposite sides and merge into a single glowing line.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-unexpected-double-cross-single-merge { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 4px; }
+.hover-unexpected-double-cross-single-merge::before, .hover-unexpected-double-cross-single-merge::after { content: ''; position: absolute; width: 50%; height: 2px; bottom: 0; background-color: var(--accent-color, #6366f1); transition: transform 0.3s ease, width 0.2s ease 0.2s; }
+.hover-unexpected-double-cross-single-merge::before { left: 0; transform: translateX(-100%); }
+.hover-unexpected-double-cross-single-merge::after { right: 0; transform: translateX(100%); }
+.hover-unexpected-double-cross-single-merge:hover::before { transform: translateX(0); width: 100%; }
+.hover-unexpected-double-cross-single-merge:hover::after { transform: translateX(0); width: 100%; opacity: 0; }
