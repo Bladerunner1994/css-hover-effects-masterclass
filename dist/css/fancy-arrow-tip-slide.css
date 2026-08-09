@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Arrow-Tip Slide
+   Category: 12. The Fancy
+   Description: Arrowhead tip sliding smoothly under text.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fancy-arrow-tip-slide { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-right: 16px; transition: padding-right 0.3s ease; }
+.hover-fancy-arrow-tip-slide::after { content: 'â†’'; position: absolute; right: 0; top: 50%; transform: translateY(-50%) translateX(-6px); opacity: 0; color: var(--accent-color, #6366f1); transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-fancy-arrow-tip-slide:hover::after { opacity: 1; transform: translateY(-50%) translateX(2px); }
