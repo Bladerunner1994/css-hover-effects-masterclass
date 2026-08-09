@@ -1,0 +1,11 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Diagonal Corner Reveal
+   Category: 9. The All Sides
+   Description: Diagonal polygon clip-path reveal sweeping from top-left to bottom-right.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-diagonal-corner-reveal { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; background-color: rgba(99, 102, 241, 0.15); border-radius: 4px; }
+.hover-allsides-diagonal-corner-reveal::before { content: ''; position: absolute; inset: 0; background-color: var(--accent-color, #6366f1); clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); transition: clip-path 0.4s cubic-bezier(0.4, 0, 0.2, 1); border-radius: 4px; }
+.hover-allsides-diagonal-corner-reveal:hover::before { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+.hover-allsides-diagonal-corner-reveal:hover { color: #fff; }
