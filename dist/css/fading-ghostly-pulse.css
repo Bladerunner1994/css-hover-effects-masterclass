@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Ghostly Pulse Fade
+   Category: 7. The Fading
+   Description: Subtle ghostly pulsing aura that fades in smoothly.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fading-ghostly-pulse { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 12px; border-radius: 6px; transition: box-shadow 0.4s ease, background-color 0.4s ease; }
+.hover-fading-ghostly-pulse:hover { background-color: rgba(99, 102, 241, 0.1); box-shadow: 0 0 25px rgba(99, 102, 241, 0.4); }
