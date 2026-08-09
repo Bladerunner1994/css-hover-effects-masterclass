@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Isometric Tilt Left
+   Category: 14. The 3D
+   Description: 3D isometric tilt to the left (-12deg rotateY, +6deg rotateX).
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-3d-isometric-tilt-left { display: inline-block; perspective: 1000px; }
+.hover-3d-isometric-tilt-left-inner { display: inline-block; padding: 10px 20px; background-color: #6366f1; color: #ffffff; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-3d-isometric-tilt-left:hover .hover-3d-isometric-tilt-left-inner { transform: rotateY(-12deg) rotateX(6deg); box-shadow: -10px 15px 25px rgba(0,0,0,0.3); }
