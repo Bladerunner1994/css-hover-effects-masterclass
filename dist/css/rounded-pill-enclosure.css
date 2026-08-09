@@ -1,0 +1,9 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Pill-Shape Enclosure
+   Category: 6. The Rounded
+   Description: Rounded pill outline shrinks and encapsulates text nicely.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-rounded-pill-enclosure { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 6px 16px; border-radius: 50px; border: 2px solid transparent; transition: border-color 0.3s ease, transform 0.2s ease; }
+.hover-rounded-pill-enclosure:hover { border-color: var(--accent-color, #6366f1); transform: scale(1.05); }
