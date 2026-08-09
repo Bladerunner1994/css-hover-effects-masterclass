@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Intersecting Grid Lines
+   Category: 12. The Fancy
+   Description: Crosshatch grid lines extending out from element.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-fancy-intersecting-grid { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; border-radius: 4px; z-index: 1; }
+.hover-fancy-intersecting-grid::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 1px, transparent 1px), linear-gradient(0deg, rgba(99, 102, 241, 0.2) 1px, transparent 1px); background-size: 8px 8px; opacity: 0; transition: opacity 0.3s ease; z-index: -1; border: 1px solid rgba(99, 102, 241, 0.4); border-radius: 4px; }
+.hover-fancy-intersecting-grid:hover::before { opacity: 1; }
