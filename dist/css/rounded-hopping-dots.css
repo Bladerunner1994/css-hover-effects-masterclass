@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Hopping Under-Dots
+   Category: 6. The Rounded
+   Description: Three rounded dots hop beneath element in a playful sequence.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-rounded-hopping-dots { position: relative; text-decoration: none; color: inherit; display: inline-block; padding-bottom: 12px; }
+.hover-rounded-hopping-dots::after { content: 'â€¢ â€¢ â€¢'; position: absolute; width: 100%; bottom: -2px; left: 0; text-align: center; font-size: 14px; letter-spacing: 4px; color: var(--accent-color, #6366f1); opacity: 0; transform: translateY(6px); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease; }
+.hover-rounded-hopping-dots:hover::after { opacity: 1; transform: translateY(0); }
