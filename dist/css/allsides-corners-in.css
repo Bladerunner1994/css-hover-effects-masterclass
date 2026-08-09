@@ -1,0 +1,10 @@
+﻿/* ==========================================================================
+   CSS Hover Effect: Corners-In All Sides
+   Category: 9. The All Sides
+   Description: All 4 borders sliding from 4 corners inward to edge centers.
+   Author: Antigravity AI CSS Masterclass
+   ========================================================================== */
+
+.hover-allsides-corners-in { position: relative; text-decoration: none; color: inherit; display: inline-block; padding: 8px 16px; }
+.hover-allsides-corners-in::before { content: ''; position: absolute; inset: 0; border: 2px solid var(--accent-color, #6366f1); transform: scale(1.3); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease; }
+.hover-allsides-corners-in:hover::before { transform: scale(1); opacity: 1; }
